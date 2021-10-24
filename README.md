@@ -53,7 +53,9 @@ then download disitibutive for Ubuntu/debain
 
 find the downloaded installer archive
 
-write in terminal sudo apt install
+write in the terminal:
+
+sudo apt install
 
 then grab and drug the installation archive to the terminal to get something like this
 
@@ -61,10 +63,15 @@ sudo apt install '/home/Downloads/google-chrome-stable_current_amd64.deb'
 
 **then**
 
-download that makefile
+download this makefile
 
 check this makefile 
 
 remove commands you don`t need
 
-enjoy
+to install all things use command:
+make all
+
+
+
+hope you enjoy this. have nice day!
