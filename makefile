@@ -28,9 +28,10 @@ database:
 	sudo apt install mariadb-client-core-10.5
 	sudo apt install mysql-client-core-8.0
 
-messenger:
+comm:
 	sudo apt install telegram-desktop
 	sudo snap install slack --classic
+	sudo snap install zoom-client
 
 all:
 	sudo snap install phpstorm --classic
@@ -53,4 +54,6 @@ all:
 	sudo apt install mysql-client-core-8.0
 	sudo apt install telegram-desktop
 	sudo snap install slack --classic
+	sudo snap install zoom-client
+
 
