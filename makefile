@@ -28,7 +28,12 @@ docker:
 	sudo apt-get install docker-ce docker-ce-cli containerd.io
 	sudo docker run hello-world
 
-docker-rm:
+docker-setup:
+	sudo groupadd docker
+	sudo usermod -aG docker $USER
+	newgrp docker
+
+docker-remove:
 	sudo apt-get remove docker docker-engine docker.io containerd runc
 
 database:
@@ -61,7 +66,10 @@ all:
 #      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 	sudo apt-get update
 	sudo apt-get install docker-ce docker-ce-cli containerd.io
-	sudo docker run hello-world
+	sudo groupadd docker
+	sudo usermod -aG docker $USER
+	newgrp docker
+	docker run hello-world
 	sudo apt  install docker-compose
 	sudo apt-get install php-sqlite3
 	sudo apt install sqlitebrowser
