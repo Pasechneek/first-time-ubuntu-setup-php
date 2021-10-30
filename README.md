@@ -2,6 +2,8 @@
 
 use this commands:
 
+sudo apt update && sudo apt upgrade
+or
 sudo apt-get update && sudo dpkg --configure -a
 
 sudo apt install make

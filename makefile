@@ -47,6 +47,11 @@ comm:
 	sudo snap install slack --classic
 	sudo snap install zoom-client
 
+git:
+	git add .
+	git commit -m "-"
+	git push
+
 all:
 	sudo snap install phpstorm --classic
 	sudo apt install git
